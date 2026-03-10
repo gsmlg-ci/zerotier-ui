@@ -32,7 +32,7 @@ LABEL org.opencontainers.image.title="ZeroTier UI" \
       org.opencontainers.image.version="v${ZT_UI_VERSION}" \
       org.opencontainers.image.description="ZeroTier UI as Docker Image" \
       org.opencontainers.image.licenses="GPL" \
-      org.opencontainers.image.source="https://github.com/gsmlg-dev/Foundation/tree/main/docker/zerotier-ui"
+      org.opencontainers.image.source="https://github.com/gsmlg-ci/zerotier-ui"
 
 COPY --from=build-stage /app/frontend/build /app/frontend/build/
 COPY --from=source /src/backend /app/backend
